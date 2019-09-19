@@ -1,0 +1,372 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  height: 100%;
+  color: #151515;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Noto Serif", serif;
+  font-style: italic;
+}
+h2,
+h3 {
+  font-family: "Noto Serif", serif;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 20px 0 20px;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 20px 0 10px;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+::selection {
+  background: black;
+  color: white;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: black;
+  color: white;
+  text-shadow: none;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+
+.animate,
+.animate * {
+  -webkit-transition: all 0.37s cubic-bezier(0.45, 0, 0.58, 1);
+  -moz-transition: all 0.37s cubic-bezier(0.45, 0, 0.58, 1);
+  -o-transition: all 0.37s cubic-bezier(0.45, 0, 0.58, 1);
+  -ms-transition: all 0.37s cubic-bezier(0.45, 0, 0.58, 1);
+  transition: all 0.37s cubic-bezier(0.45, 0, 0.58, 1);
+}
+
+.home {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  background-image: url("../assets/bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.home-card {
+  text-align: center;
+  background: white;
+  padding: 80px;
+  color: black;
+  border-radius: 2px;
+  margin: 20px;
+}
+
+.audio-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.btn-link {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  color: orange;
+  text-decoration: none;
+}
+
+.pages {
+  position: relative;
+  top: 100%;
+  min-height: 100%;
+}
+
+.sidebar {
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+}
+
+.logo {
+  width: 92%;
+  min-height: 70px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  color: black;
+  background: white;
+  padding-bottom: 15px;
+  margin: 10px;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.logo a h4 {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.logo a h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.side-menu {
+  position: relative;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.side-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.side-menu ul li a {
+  display: block;
+  height: 50px;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #151515;
+  background-color: #ffffff;
+  -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  -ms-transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+}
+
+.page-sections {
+  margin-left: 25%;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.footer {
+  color: #222222;
+}
+
+.sub-footer {
+  border-top: 1px solid #efefef;
+  margin: 0 4.5% 20px;
+  padding: 40px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.sub-footer .social-media a {
+  margin: 0 10px;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.aboutme,
+.work,
+.education {
+  margin: 0 4.5%;
+  padding-top: 60px;
+}
+
+.aboutme .text p {
+  text-align: justify;
+}
+
+.work ul {
+  list-style: none;
+  margin: 20px 0 40px;
+  padding: 0;
+}
+
+.work ul li {
+  display: flex;
+  align-items: flex-start;
+  min-height: 40px;
+  padding: 10px 0;
+}
+
+.work p {
+  margin: 0;
+}
+
+.work ul li { display: flex; }
+.work ul li div { width: 33%; }
+.work ul li .work-period {  }
+.work ul li .position {  }
+.work ul li .company a { text-decoration: underline; }
+
+@media (min-width: 1024px) {
+  .work ul li div { width: 25%; }
+}
+
+@media (max-width: 576px) {
+  .work ul li { flex-direction: column; }
+  .work ul li div { width: 100%; }
+}
+
+.education ul {
+  list-style: none;
+  margin: 20px 0 40px;
+  padding: 0;
+}
+
+.education ul li {
+  display: flex;
+  align-items: flex-start;
+  min-height: 60px;
+  padding: 10px 0;
+}
+
+.education p {
+  margin: 0;
+}
+
+.edu-period {
+  width: 120px;
+}
+
+.degree {
+  width: 100%;
+}
+
+.photo {
+  position: relative;
+  width: 300px;
+}
+
+a.scroll {
+  opacity: 0.9;
+  border-radius: 40px;
+  padding: 10px;
+  position: absolute;
+  bottom: 40px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: black;
+}
+
+a.scroll:hover {
+  text-decoration: none;
+}
+
+.sidebar-mobile {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar-mobile {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .page-sections {
+    margin-left: 0;
+  }
+
+  .sidebar-mobile .btn-bars {
+    z-index: 4;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    color: black;
+    display: block;
+  }
+
+  .sidebar-mobile .side-menu {
+    display: flex;
+    left: -100vw;
+    z-index: 1;
+    background: white;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .sidebar-mobile.open .side-menu {
+  }
+
+  .sidebar-mobile.open .side-menu ul {
+    width: 100%;
+  }
+
+  .aboutme,
+  .work,
+  .education {
+    margin: 0 4.5%;
+    padding-top: 110px;
+    min-height: 100vh;
+  }
+}
+
+small,
+.small {
+  font-size: 0.8rem;
+  font-weight: 400;
+  max-width: 70%;
+  display: inline-block;
+  text-align: justify;
+}
