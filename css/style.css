@@ -6,10 +6,6 @@
    height: 100%;
    color: #151515;
    font-size: 16px;
-   background-image: url(bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
  }
 
  h2, h3 {
@@ -66,10 +62,32 @@
    flex-direction: column;
    border-bottom: 1px solid #eaeaea;
    background-color: white;
-   background-image: url("bg.png");
+   background-image: url("../assets/bg.jpg");
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
+ }
+
+ .home-card {
+   text-align: center;
+   background: white;
+   padding: 80px;
+   color: black;
+ }
+
+ .audio-controls {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+ }
+ .btn-link {
+   color: white;
+   text-decoration: none;
+ }
+
+ .btn-link:hover, .btn-link:focus {
+   color: orange;
+   text-decoration: none;
  }
 
  .pages {
@@ -166,7 +184,7 @@
  }
 
  .footer {
-   color: #777;
+   color: #999;
    background: #151515;
  }
 
@@ -244,7 +262,7 @@
  }
 
  a.scroll {
-   border: 1px solid #bbbbbb;
+   opacity: 0.9;
    border-radius: 40px;
    padding: 10px;
    position: absolute;
@@ -254,6 +272,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   background: white;
    color: black;
  }
 
