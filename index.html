@@ -27,16 +27,35 @@
       <h1>Software Engineer</h1>
     </div>
 
-    <a class="scroll" aria-label="Discover more" href="#work"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+    <a class="scroll" aria-label="Discover more" href="#pages"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
     <div class="audio-controls">
       <button class="btn btn-link play">
-        <i  class="fa on">&#xf04b;</i>
-        <i  style="display:none" class="fa off">&#xf04c;</i>
+        <i class="fa on">&#xf04b;</i>
+        <i style="display:none" class="fa off">&#xf04c;</i>
       </button>
     </div>
 
   </div>
-  <div class="pages">
+  <div class="pages" id="pages">
+    <div class="sidebar-mobile">
+      <button class="btn btn-link btn-bars">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times" style="display: none;" ></i>
+      </button>
+      <div class="logo">
+        <a href="#home">
+          <h4>Badis Merabet</h4>
+          <h1>Software Engineer</h1>
+        </a>
+      </div>
+      <nav class="side-menu">
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#work">work</a></li>
+          <li><a href="#about">about me</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="sidebar">
       <div class="logo">
         <a href="#home">
@@ -53,7 +72,6 @@
       </nav>
     </div>
     <div class="page-sections">
-
       <div class="work" id="work">
         <h2>Work History</h2>
         <ul>
@@ -133,7 +151,7 @@
 
                 For me, the work of software development is both science and art. On the one hand, it grows from the lessons of experience I have learned trying to create systems and programs
                 that improve the stability and performance of every part in product.
-                On the other hand, it stems from the passion for user experience, ease of use, fast response time, seamless interaction that leads users to enjoy using software,and have what they need.
+                On the other hand, it stems from the passion for user experience, ease of use, fast response time, seamless interaction that leads users to enjoy using software and have what they need from it.
                 I also come to realise the value of these principles:
                 <ul>
                   <li>Incremental development</li>
@@ -200,10 +218,7 @@
   </audio>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script async src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-
   <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-
   <script src="js/script.js"> </script>
 </body>
 
