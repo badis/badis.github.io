@@ -229,8 +229,14 @@
  }
 
  .work-period {
-   width: 190px;
+   width: 200px;
  }
+
+
+  .position {
+    width: 100%;
+  }
+
 
  .education ul {
    list-style: none;
@@ -257,6 +263,11 @@
  .edu-period {
    width: 120px;
  }
+
+
+  .degree {
+    width: 100%;
+  }
 
  .photo {
    position: relative;
@@ -300,7 +311,7 @@
    }
 
    .page-sections {
-     margin-left: 0; 
+     margin-left: 0;
    }
 
    .sidebar-mobile .btn-bars {
