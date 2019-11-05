@@ -72,7 +72,7 @@
    background: white;
    padding: 80px;
    color: black;
-   border-radius: 50px;
+   border-radius: 2px;
    margin: 20px;
  }
 
@@ -300,8 +300,7 @@
    }
 
    .page-sections {
-     margin-left: 0;
-     padding-top: 90px;
+     margin-left: 0; 
    }
 
    .sidebar-mobile .btn-bars {

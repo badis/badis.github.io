@@ -24,7 +24,7 @@ $(document).ready(function() {
   $('a[href*="#"]').on('click', function(e) {
     e.preventDefault();
 
-    if ($(this).attr('href') !== '#pages') {
+    if ($(this).attr('href') !== '#pages' && $(this).attr('href') !== '#home') {
       $('button.btn-bars').trigger('click');
     }
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
       'easeOutCubic'
     );
   });
-
+/*
   var state = "";
   $('button.play').on('click', function() {
     if (state == "play") {
@@ -56,4 +56,5 @@ $(document).ready(function() {
       $('#player').get(0).play();
     }
   });
+  */
 });
