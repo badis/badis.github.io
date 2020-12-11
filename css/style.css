@@ -23,13 +23,13 @@
  }
 
  ::selection {
-   background: orange;
+   background: black;
    color: white;
    text-shadow: none;
  }
 
  ::-moz-selection {
-   background: orange;
+   background: black;
    color: white;
    text-shadow: none;
  }
@@ -106,21 +106,22 @@
    top: 0;
    z-index: 0;
    display: flex;
-   border-right: 1px solid #eaeaea;
    background-color: #fff;
    align-items: center;
  }
 
  .logo {
-   width: 100%;
+   width: 92%;
    min-height: 70px;
    position: absolute;
    left: 0;
    top: 0;
    z-index: 3;
-   background: #151515;
-   color: white;
+   border: 1px solid #151515;
+   color: black;
+   background: white;
    padding-bottom: 15px;
+   margin: 10px;
  }
 
  .logo a:hover {
@@ -130,15 +131,15 @@
 
  .logo a h4 {
    font-size: 14px;
+   font-weight: bold;
    text-align: center;
    margin-top: 22px;
-   color: white;
  }
 
  .logo a h1 {
    font-size: 18px;
    text-align: center;
-   color: white;
+   font-weight: bold;
  }
 
  .side-menu {
@@ -154,14 +155,6 @@
    margin: 0;
    padding: 0;
    list-style: none;
- }
-
- .side-menu ul li {
-   border-bottom: 1px solid #f0f0f0;
- }
-
- .side-menu ul li:first-child {
-   border-top: 1px solid #f0f0f0;
  }
 
  .side-menu ul li a {
@@ -187,12 +180,19 @@
 
  .footer {
    color: #999;
-   background: #151515;
+   /* background: #151515; */
  }
 
  .sub-footer {
-   margin: 0 4.5%;
+   margin: 0 4.5% 20px;
    padding: 20px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+ }
+
+ .sub-footer .social-media a {
+   margin: 0 10px; 
  }
 
  .footer p {
@@ -213,15 +213,10 @@
  }
 
  .work ul li {
-   border-bottom: 1px solid #ebebeb;
    display: flex;
    align-items: flex-start;
    min-height: 60px;
    padding: 10px 0;
- }
-
- .work ul li:first-child {
-   border-top: 1px solid #ebebeb;
  }
 
  .work p {
@@ -245,15 +240,10 @@
  }
 
  .education ul li {
-   border-bottom: 1px solid #ebebeb;
    display: flex;
    align-items: flex-start;
    min-height: 60px;
    padding: 10px 0;
- }
-
- .education ul li:first-child {
-   border-top: 1px solid #ebebeb;
  }
 
  .education p {
