@@ -216,6 +216,7 @@ a:hover {
 }
 
 .aboutme,
+.skills,
 .work,
 .education {
   margin: 0 4.5%;
@@ -243,19 +244,76 @@ a:hover {
   margin: 0;
 }
 
-.work ul li { display: flex; }
-.work ul li div { width: 33%; }
-.work ul li .work-period {  }
-.work ul li .position {  }
-.work ul li .company a { text-decoration: underline; }
+.work ul li {
+  display: flex;
+}
+.work ul li div {
+  width: 33%;
+}
+.work ul li .work-period {
+}
+.work ul li .position {
+}
+.work ul li .company a {
+  text-decoration: underline;
+}
 
 @media (min-width: 1024px) {
-  .work ul li div { width: 25%; }
+  .work ul li div {
+    width: 25%;
+  }
 }
 
 @media (max-width: 576px) {
-  .work ul li { flex-direction: column; }
-  .work ul li div { width: 100%; }
+  .work ul li {
+    flex-direction: column;
+  }
+  .work ul li div {
+    width: 100%;
+  }
+}
+
+.skills ul {
+  list-style: none;
+  margin: 20px 0 40px;
+  padding: 0;
+}
+
+.skills ul li {
+  display: flex;
+  align-items: flex-start;
+  min-height: 40px;
+  padding: 10px 0;
+}
+
+.skills p {
+  margin: 0;
+}
+
+.skills ul li {
+  display: flex;
+}
+.skills ul li b {
+  width: 30%;
+}
+.skills ul li span {
+  width: 70%;
+}
+
+@media (min-width: 1024px) {
+  .skills ul li b {
+    width: 20%;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills ul li {
+    flex-direction: column;
+  }
+  .skills ul li b,
+  .skills ul li span {
+    width: 100%;
+  }
 }
 
 .education ul {
