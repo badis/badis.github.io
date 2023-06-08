@@ -218,6 +218,7 @@ a:hover {
 .aboutme,
 .skills,
 .work,
+.side-projects,
 .education {
   margin: 0 4.5%;
   padding-top: 60px;
@@ -269,6 +270,50 @@ a:hover {
     flex-direction: column;
   }
   .work ul li div {
+    width: 100%;
+  }
+}
+
+.side-projects ul {
+  list-style: none;
+  margin: 20px 0 40px;
+  padding: 0;
+}
+
+.side-projects ul li {
+  display: flex;
+  align-items: flex-start;
+  min-height: 40px;
+  padding: 10px 0;
+}
+
+.side-projects p {
+  margin: 0;
+}
+
+.side-projects ul li {
+  display: flex;
+}
+
+.side-projects ul li div.period {
+  width: 15%;
+}
+.side-projects ul li div.description {
+  width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .side-projects ul li div.period,
+  .side-projects ul li div.description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .side-projects ul li {
+    flex-direction: column;
+  }
+  .side-projects ul li div {
     width: 100%;
   }
 }
@@ -413,6 +458,7 @@ a.scroll:hover {
 
   .aboutme,
   .work,
+  .side-projects,
   .education {
     margin: 0 4.5%;
     padding-top: 110px;
