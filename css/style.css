@@ -191,6 +191,11 @@ a:hover {
   transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
 }
 
+
+.side-menu ul li a:hover {
+  text-decoration: overline;
+}
+
 .page-sections {
   margin-left: 25%;
   overflow: hidden;
@@ -223,9 +228,12 @@ a:hover {
 .skills,
 .work,
 .side-projects,
+.contact-details,
 .education {
   margin: 0 4.5%;
   padding-top: 60px;
+  padding-bottom: 60px;
+  min-height: 100vh;
 }
 
 .aboutme .text p {
@@ -277,6 +285,13 @@ a:hover {
     width: 100%;
   }
 }
+
+
+
+
+
+
+
 
 .side-projects ul {
   list-style: none;
@@ -382,18 +397,59 @@ a:hover {
   margin: 0;
 }
 
-.edu-period {
+.education .edu-period {
   width: 120px;
 }
 
-.degree {
+.education .degree {
   width: 100%;
 }
 
-.photo {
+.education .photo {
   position: relative;
   width: 300px;
 }
+
+
+
+
+.contact-details ul {
+  list-style: none;
+  margin: 20px 0 40px;
+  padding: 0;
+}
+
+.contact-details ul li {
+  display: flex;
+  align-items: flex-start;
+  min-height: 40px;
+  padding: 10px 0;
+}
+
+.contact-details p {
+  margin: 0;
+}
+
+.contact-details p.email {
+  margin-top: 20px;
+  font-size: 48px;
+}
+
+.contact-details p.email a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 576px) {
+  .contact-details ul li {
+    flex-direction: column;
+  }
+  .contact-details ul li div {
+    width: 100%;
+  }
+}
+
+
 
 a.scroll {
   opacity: 0.9;
