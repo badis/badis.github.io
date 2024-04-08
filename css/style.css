@@ -533,8 +533,10 @@ a.scroll:hover {
 
   .aboutme,
   .work,
+  .skills,
+  .education,
   .side-projects,
-  .education {
+  .contact-details {
     margin: 0 4.5%;
     padding-top: 110px;
     min-height: 100vh;
