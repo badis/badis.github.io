@@ -198,16 +198,10 @@ a:hover {
   text-decoration: none;
   color: var(--black);
   background-color: var(--white);
-  -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
-  -moz-transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
-  -o-transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
-  -ms-transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
-  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
 }
 
-
 .side-menu ul li a:hover {
-  text-decoration: overline;
+  font-weight: bold;
 }
 
 .page-sections {
