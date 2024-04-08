@@ -1,11 +1,19 @@
+:root {
+  --white: #f5f5f5;
+  --black: #111111;
+  --bg-color: var(--white);
+  --fg-color: var(--black);
+  --border-color: #DDDDDD;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: "Quicksand", sans-serif;
   height: 100%;
-  color: #151515;
-  font-size: 12px;
+  color: var(--black);
+  font-size: 1rem;
 }
 
 h1 {
@@ -19,7 +27,7 @@ h3 {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin: 20px 0 20px;
   font-style: italic;
 }
@@ -35,28 +43,31 @@ h4 {
   font-weight: normal;
 }
 
-img {
-  border-radius: 2px;
+img.photo, img.workspace {
+  border-radius: 8px;
+  border: 2px solid var(--border-color);
+  overflow: hidden;
+  padding: 2px;
 }
 
 ::selection {
-  background: black;
-  color: white;
+  background: var(--fg-color);
+  color: var(--bg-color);
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background: black;
-  color: white;
+  background: var(--fg-color);
+  color: var(--bg-color);
   text-shadow: none;
 }
 
 a {
-  color: black;
+  color: var(--black);
 }
 
 a:hover {
-  color: gray;
+  color: var(--black);
 }
 
 .animate,
@@ -78,20 +89,22 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--white);
   background-image: url("../assets/bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  border-bottom: 2px solid var(--border-color);
 }
 
 .home-card {
   text-align: center;
-  background: white;
+  background: var(--white);
   padding: 80px;
-  color: black;
-  border-radius: 2px;
+  color: var(--black);
+  border-radius: 8px;
   margin: 20px;
+  border: 2px solid var(--border-color);
 }
 
 .audio-controls {
@@ -101,13 +114,13 @@ a:hover {
 }
 
 .btn-link {
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 
 .btn-link:hover,
 .btn-link:focus {
-  color: orange;
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -125,8 +138,9 @@ a:hover {
   top: 0;
   z-index: 0;
   display: flex;
-  background-color: #fff;
+  background-color: var(--white);
   align-items: center;
+  border-right: 2px solid var(--border-color);
 }
 
 .logo {
@@ -136,15 +150,15 @@ a:hover {
   left: 0;
   top: 0;
   z-index: 3;
-  color: black;
-  background: white;
+  color: var(--black);
+  background: var(--white);
   padding-bottom: 15px;
   margin: 10px;
 }
 
 .logo a:hover {
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 .logo a h4 {
@@ -182,8 +196,8 @@ a:hover {
   line-height: 50px;
   text-align: center;
   text-decoration: none;
-  color: #151515;
-  background-color: #ffffff;
+  color: var(--black);
+  background-color: var(--white);
   -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
   -moz-transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
   -o-transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
@@ -203,11 +217,11 @@ a:hover {
 }
 
 .footer {
-  color: #222222;
+  color: var(--black);
 }
 
 .sub-footer {
-  border-top: 1px solid #efefef;
+  border-top: 2px solid var(--border-color);
   margin: 0 4.5% 20px;
   padding: 40px 0 20px;
   display: flex;
@@ -432,12 +446,12 @@ a:hover {
 
 .contact-details p.email {
   margin-top: 20px;
-  font-size: 48px;
+  font-size: 32px;
 }
 
 .contact-details p.email a:hover {
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 @media (max-width: 576px) {
@@ -462,8 +476,9 @@ a.scroll {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
-  color: black;
+  background: var(--white);
+  color: var(--black);
+  font-size: 2rem;
 }
 
 a.scroll:hover {
@@ -496,7 +511,7 @@ a.scroll:hover {
     position: absolute;
     top: 40px;
     left: 30px;
-    color: black;
+    color: var(--black);
     display: block;
   }
 
@@ -504,7 +519,7 @@ a.scroll:hover {
     display: flex;
     left: -100vw;
     z-index: 1;
-    background: white;
+    background: var(--white);
     height: 100vh;
     align-items: center;
   }
