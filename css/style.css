@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
   display: flex;
   justify-content: center;
   align-items: center;
