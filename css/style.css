@@ -17,9 +17,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
   padding: 0;
+}
+
+header {
+  padding: 50px;
 }
 
 header p {
@@ -32,7 +35,6 @@ header p {
 main {
   background-color: #FFD54F;
   padding: 10%;
-  margin: 100px auto;
   border-radius: 4px;
 }
 
@@ -40,6 +42,10 @@ main p {
   font-size: 44px;
   line-height: 80px;
   font-weight: 800;
+}
+
+footer{
+  padding: 50px;
 }
 
 footer a {
