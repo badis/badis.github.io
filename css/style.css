@@ -33,30 +33,20 @@ header p {
   font-size: 3rem;
 }
 
-main {
+.intro {
   background-color: #FFD54F;
   padding: 10%;
   border-radius: 4px;
 }
 
-main p {
+.intro p {
   font-size: 44px;
   line-height: 80px;
   font-weight: 800;
 }
 
-footer{
-  padding: 50px;
-}
-
-footer a {
-  text-decoration: none;
-  color: #FFD54F;
-}
-
-
 .skills {
-  margin-top: 50px;
+  margin: 50px auto;
   max-width: 800px;
 }
 
@@ -64,6 +54,7 @@ footer a {
   color: #333;
   margin-bottom: 20px;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .skills ul {
@@ -92,3 +83,16 @@ footer a {
   display: block;
   margin-bottom: 5px;
 }
+
+footer{
+  padding: 50px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FFD54F;
+}
+
+
+
