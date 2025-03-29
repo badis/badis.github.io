@@ -51,7 +51,7 @@ header p {
 }
 
 .skills h2 {
-  color: #333;
+  color: #333333;
   margin-bottom: 20px;
   font-size: 1.8rem;
   text-align: center;
@@ -79,7 +79,7 @@ header p {
 }
 
 .skills li strong {
-  color: #FFD54F;
+  color: #333333;
   display: block;
   margin-bottom: 5px;
 }
@@ -90,8 +90,12 @@ footer{
 }
 
 footer a {
+  display: inline-block;
   text-decoration: none;
-  color: #FFD54F;
+  color: black;
+  background-color: #FFD54F;
+  padding: 0 4px;
+  border-radius: 4px;
 }
 
 
