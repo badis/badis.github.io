@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 /* Reset default styles */
 * {
   margin: 0;
@@ -6,98 +8,113 @@
 }
 
 ::selection {
-  color: white;
-  background-color: #0077b5;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 0;
   padding: 20px;
   min-height: 100vh;
-  background-color: #f0f2f5;
+  background-color: #ffffff;
+  color: #333333;
 }
 
 .container {
   width: 100%;
   max-width: 800px;
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 header {
-  text-align: center;
-  margin-bottom: 30px;
+  text-align: left;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #333333;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 5px;
 }
 
 header p {
-  font-size: 1.2rem;
-  color: #555555;
+  font-size: 1.1rem;
+  color: #5a5a5a;
+  margin-bottom: 15px;
 }
 
 header a {
-  color: #0077b5;
+  color: #000000;
   text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
 }
 
 header a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #000000;
 }
 
 section {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 h2 {
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: #333333;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #0077b5;
-  padding-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .experience-item,
 .education-item {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .experience-item h3,
 .education-item h3 {
   font-size: 1.2rem;
-  font-weight: 800;
-  color: #333333;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 2px;
 }
 
 .experience-item p,
 .education-item p {
   font-size: 1rem;
-  color: #555555;
+  color: #5a5a5a;
   margin-bottom: 10px;
 }
 
 .experience-item ul {
-  list-style-position: inside;
-  padding-left: 20px;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .experience-item li {
   font-size: 1rem;
-  color: #555555;
-  margin-bottom: 5px;
+  color: #333333;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.experience-item li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  top: -2px;
+  font-size: 1.2rem;
+  color: #5a5a5a;
 }
 
 .skills ul {
@@ -108,26 +125,30 @@ h2 {
 }
 
 .skills li {
-  background-color: #0077b5;
-  color: #ffffff;
-  padding: 5px 10px;
+  background-color: #eeeeee;
+  color: #333333;
+  padding: 8px 15px;
   border-radius: 4px;
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
 footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
 }
 
 footer p {
   font-size: 1rem;
-  color: #555555;
+  color: #5a5a5a;
 }
 
 footer a {
-  color: #0077b5;
+  color: #000000;
   text-decoration: none;
+  font-weight: 500;
 }
 
 footer a:hover {
