@@ -53,6 +53,7 @@ header p {
   margin-bottom: 15px;
   width: 100%;
   text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 header .contact-links {
